@@ -1,0 +1,202 @@
+html,body{
+	min-height: 100%;
+}
+
+body{
+	margin: 0;
+	position: relative; 
+	font-family: Arial, Sans-serif;
+	font-size: 1rem;
+	color: #212529;
+}
+
+/* Top Navbar styles */
+.top-nav{
+	background-color: #314D68;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.top-nav ul{
+	display: inline-flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top-nav ul li{
+
+	background-color: ;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 17px;
+	height: 35px;
+}
+.top-nav ul li:hover{
+	font-weight: bold;
+	background-color: #fff;
+	color: #000;
+}
+
+.top-nav ul li a{
+	text-decoration: none;
+	color: inherit;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* End of top Navbar */
+
+/* Left Navbar */
+.side-nav{
+	background-color: #ddd;
+	width: 200px;
+	position: fixed;
+	bottom: 0;
+	top: 45px;
+	overflow-y: scroll;
+	overflow-x: auto;
+	padding-left: 5px;
+}
+.side-nav ul{
+	list-style: none;
+	padding: 0;
+}
+.side-nav li a{
+	text-decoration: none;
+	padding-left: 5px;
+	color: inherit;
+} 
+.side-nav ul li:hover{
+	background-color: #aaa;
+}
+/* End of left Navbar */
+
+/* Main Contents */
+.content{
+	position: fixed;
+	background-color: #f1f1f1;
+	bottom: 0;
+	top: 45px;
+	left: 205px;
+	right: 0;
+	padding: 10px;
+	overflow: auto;
+}
+
+.card{	
+	background-color: #eaeaea;
+	padding: 15px;
+	margin: 10px;
+	display: inline-block;
+	border-style: solid;
+	border-color: #999;
+	border-width: 0.5px;
+}
+.card a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.thumbnail{
+	max-width: 200px;
+	background-color: #f1f1f1;
+	transition: box-shadow 0.3s ease-in-out;
+	display: inline-block;
+	box-shadow: none;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 30px;
+} 
+.thumbnail:hover{
+	box-shadow: 5px 5px 5px #bbb;
+/*	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	background-color: #4CAF50;
+	width:200px;
+	height: 6px; */
+	
+}
+
+.thumbnail h4{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: #FFF;
+	background-color: #314D68;
+	margin: 0;
+	padding: 10px;
+}
+
+.tooltip{
+    background-color: #314D68;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 0;
+	font-weight: bold;
+    position: absolute;
+	left: 0;
+	right:0;
+	bottom: 0;
+    /* Position the tooltip */
+    z-index: 1;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	
+}
+
+.thumbnail:hover .tooltip{
+    visibility: visible;
+	opacity: 1;
+}
+
+/*
+.author-name{
+	border: 1px solid green;
+	width: 10px;
+	height: 30px;
+	transition: 2s;
+	background-color: red;
+	margin-left: -15px;
+	margin-top:-15px;
+	color: #fff;
+	
+}
+.author-name:hover{
+	width: 229px;
+}
+*/
+/* End of main content*/
+
+/* Home Page Rules */
+
+
+/* ENd of Home page rules */ 
+/* Rules for Poem Section */
+.poem-box{
+	text-align: justify;
+	padding: 20px;
+}
+.author-image{
+	width: 200px;
+	border-radius: 50px;	
+}
+/* End of rules for Poem Section */
+
+/*Rules for Article Section */
+.article-box{
+	text-align: justify;
+	font-family: verdana;
+	line-height: 2em;
+	
+}
+.article-img{
+
+}
