@@ -113,6 +113,7 @@ body{
 } 
 .thumbnail:hover{
 	box-shadow: 5px 5px 5px #bbb;
+	
 /*	position: absolute;
 	white-space: nowrap;
 	overflow: hidden;
@@ -183,10 +184,15 @@ body{
 .poem-box{
 	text-align: justify;
 	padding: 20px;
+	width: 25%;
 }
 .author-image{
-	width: 200px;
-	border-radius: 50px;	
+	width: 10%;
+	border-radius: 50px;
+	position: sticky;
+	float: right;
+	top: 0;
+		
 }
 /* End of rules for Poem Section */
 
@@ -195,8 +201,45 @@ body{
 	text-align: justify;
 	font-family: verdana;
 	line-height: 2em;
+	border: 1px solid #aaa;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.interview-question{
+	background-color: #7683f3;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
 	
 }
-.article-img{
+.interview-answer{
+	font-family: verdana;
+	text-align: justify;
+}
+.interviewee-name{
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 3px;
+}
 
+
+.thumbnail-gallery{
+	padding-top: 20px; !important
+	padding-bottom: 30px;
+} 
+
+
+/* Design for Responsiveness */
+@media (max-width: 500px){
+	.side-nav{
+		width: 100px;
+	}	
+	.content{
+		margin: 0;
+		position: relative;
+		left:100px;
+	}
 }

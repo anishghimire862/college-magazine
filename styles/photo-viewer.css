@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.viewer{
+	border: 4px inset #000;
+	width: 98%;
+	height: 40vw;
+	overflow: none;
+	padding: 1px;
+	background-color: #000;
+}
+.viewer img{
+	height: 37vw;
+	position: relative;
+}
+/*
+.wraper{
+	margin: 10px;
+	border: 1px solid #000;
+	overflow-y: scroll;
+	width: 100%;
+}
+.thumbnail{
+	background-color: blue;
+	display: inline-block;
+	width: 22%;
+	margin-left: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.thumbnail img{
+	width: 100%;
+	height: 30%;
+}
+*/
+.container2 {
+  display: block;
+  width: 100%;
+  height: 20vw;
+  white-space: nowrap;
+  margin-left: 10px;
+  position: fixed;
+}
+
+.imglist {
+  overflow-y: hidden;
+  display: block;
+  width: 100%;
+/*height: 15vw;*/
+  height: 100%;
+}
+
+.imglist div {
+  width: 20%;
+  display: inline;
+  margin: 0;
+}
+.imglist div img{
+	width: 20%;
+	height: 10vw;
+	border: 1px solid #fff;
+}
+.imglist div img:hover{
+	border: 1px solid #000;
+}
+.arrow{
+	position: fixed;
+	z-index: 1;
+	background-color: #000;
+	color: #fff;
+	width: 30pt;
+	height: 30pt;
+	top: 230px;
+	border-radius: 50%;
+}
+.arrow:hover{
+	background-color: #999;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+}
+.arrow span{
+	font-size: 30pt;
+	position: relative;
+	bottom: 3px;
+	left: 6px;
+	
+}
+.arrow-right{
+	position: fixed;
+	left: 1314px;
+}
+
+@media (max-width: 500px){
+	.viewer{
+		width: 97%;
+	}
+	viewer img{
+		width: 97%;
+	}
+	.arrow{
+		top: 52px;
+	}
+	.arrow-right{
+		left: 390px;
+	}
+}
