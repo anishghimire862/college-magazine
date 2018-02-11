@@ -1,6 +1,8 @@
 body{
-	margin: 0;
-	padding: 0;
+	margin-top: 0;
+	margin-bottom:20px;
+	padding-top: 0;
+	padding-bottom:20px;
 }
 .viewer{
 	border: 4px inset #000;
@@ -13,6 +15,7 @@ body{
 .viewer img{
 	height: 37vw;
 	position: relative;
+	cursor: pointer;
 }
 /*
 .wraper{
@@ -37,18 +40,18 @@ body{
 .container2 {
   display: block;
   width: 100%;
-  height: 20vw;
+  height: 15vw;
   white-space: nowrap;
   margin-left: 10px;
   position: fixed;
 }
 
 .imglist {
-  overflow-y: hidden;
+  overflow-y: scroll;
   display: block;
   width: 100%;
 /*height: 15vw;*/
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .imglist div {
@@ -57,8 +60,8 @@ body{
   margin: 0;
 }
 .imglist div img{
-	width: 20%;
-	height: 10vw;
+	width: 10%;
+	height: 4vw;
 	border: 1px solid #fff;
 }
 .imglist div img:hover{

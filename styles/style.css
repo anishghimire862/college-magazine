@@ -18,6 +18,7 @@ body{
 	top: 0;
 	left: 0;
 	right: 0;
+	border: 1px solid #314D68;
 }
 
 .top-nav ul{
@@ -88,6 +89,7 @@ body{
 }
 
 .card{	
+	width: 50%;
 	background-color: #eaeaea;
 	padding: 15px;
 	margin: 10px;
@@ -99,6 +101,21 @@ body{
 .card a{
 	text-decoration: none;
 	color: inherit;
+}
+.introduction {
+	float: right;
+	width: 35%;
+	position: fixed;
+	right: 10px;
+	top: 56px;
+}
+.intro-content {
+	text-align: justify;
+	font-family: courier-new;
+	font-size: 1.1em;
+	padding: 10px;
+	
+	
 }
 
 .thumbnail{
@@ -112,8 +129,7 @@ body{
 	padding-bottom: 30px;
 } 
 .thumbnail:hover{
-	box-shadow: 5px 5px 5px #bbb;
-	
+	box-shadow: 5px 5px 5px #bbb;	
 /*	position: absolute;
 	white-space: nowrap;
 	overflow: hidden;
@@ -188,7 +204,7 @@ body{
 }
 .author-image{
 	width: 10%;
-	border-radius: 50px;
+	border-radius: 50%;
 	position: sticky;
 	float: right;
 	top: 0;
@@ -205,7 +221,7 @@ body{
 	padding: 5px;
 	box-sizing: border-box;
 	border: 1px solid #aaa;
-	padding: 5px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 .interview-question{
@@ -230,8 +246,6 @@ body{
 	padding-top: 20px; !important
 	padding-bottom: 30px;
 } 
-
-
 /* Design for Responsiveness */
 @media (max-width: 500px){
 	.side-nav{

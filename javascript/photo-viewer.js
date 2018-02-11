@@ -29,6 +29,3 @@ function onThumbnailClick(el){
 	}
 	
 }
-
-
-
