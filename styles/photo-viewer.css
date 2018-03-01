@@ -94,7 +94,6 @@ body{
 	position: fixed;
 	left: 1314px;
 }
-
 @media (max-width: 500px){
 	.viewer{
 		width: 97%;

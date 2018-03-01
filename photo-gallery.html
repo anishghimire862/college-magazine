@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Photo Gallery</title>
 		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="icon" href="images/KCMITlogo.jpg" >
+		<link rel="icon" href="images/KCMITlogo.jpg" />
+		<script src="./javascript/jquery-3.3.1.min.js"></script>
+		<script src="./javascript/scripts.js"></script>
 	</head>
 	<body>
 		<div class="top-nav">
@@ -47,8 +49,11 @@
 				</ul>
 		</div>
 		
-		<div class="content">
+		<div class="content" id="content">
 			<div class="card" style="display: block">
+				<span>
+					<h2>Experiences</h2>
+				</span>	
 					<div style="display: inline-block;">
 						<div class="card card-gallery thumbnail thumbnail-gallery">
 							<a href="photo-viewer.html">

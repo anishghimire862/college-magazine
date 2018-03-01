@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>KCMIT Magazine</title>
 		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="icon" href="images/KCMITlogo.jpg" >
+		<link rel="icon" href="images/KCMITlogo.jpg" />
+		<script src="./javascript/jquery-3.3.1.min.js"></script>
+		<script src="./javascript/scripts.js"></script>	
 	</head>
 	<body>
 		<div class="top-nav">
 			<ul>	
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="aboutus.html">ABOUT US</a></li>
-				<li><a href="introduction.html">INTRODUCTION</a></li>
-				<li><a href="upload.html"> SUBMIT ARTICLE </a> </li>
-				<li><a href="photo-gallery.html">GALLERY</a></li>
-				<li><a href="past-students.html">PAST STUDENTS</a></li>
+				<li><a href="#" class="navlink" data-url="index.html">HOME</a></li>
+				<li><a href="#" class="navlink" data-url="developers.html">ABOUT US</a></li>
+			<!--	<li><a href="#"> SUBMIT ARTICLE </a> </li> -->
+				<li><a href="#" class="navlink" data-url="photo-gallery.html">GALLERY</a></li>
+				<li><a href="#" class="navlink" data-url="past-students.html">PAST STUDENTS</a></li>
 			</ul>	
 		</div>
 
@@ -47,7 +48,7 @@
 				</ul>
 		</div>
 		
-		<div class="content">
+		<div class="content" id="content">
 			<div class="card" style="display: block">
 				<div>
 					<h2> POEMS </h2>
@@ -59,8 +60,8 @@
 									<a href="#">By: Anish Ghimire</a>
 								</div>
 							</div>-->
-							<a href="poems/she_an_angel">
-									<h4>She, an Angel</h4>
+							<a href="#" id="poem" class="link" data-url="poems/she_an_angel.html">
+									<h4 class="get-title">She, an Angel</h4>
 									Untold stories,
 									hidden scars,
 									pain behind her smile.
@@ -70,24 +71,8 @@
 							</a>
 						</div>
 						<div class="card thumbnail">
-							<!--<div class="author-name">
-								<div style="width: 500px">
-									<a href="#">By: Anish Ghimire</a>
-								</div>
-							</div>-->
-							<a href="poems/she_an_angel">
-									<h4>She, an Angel</h4>
-									Untold stories,
-									hidden scars,
-									pain behind her smile.
-									tried to kill herself,
-									still alive, maybe god has... 
-									<span class="tooltip">By: Anish Ghimire</span>
-							</a>
-						</div>
-						<div class="card thumbnail">
-							<a href="poems/i_believe.html">
-								<h4>Believe..</h4>
+							<a href="#" class="link" data-url="poems/i_believe.html">
+								<h4 class="get-title">Believe..</h4>
 								I can see the sun's ray have again
 								fallen in the rain
 								and I believe there's always an angel who show
@@ -110,21 +95,21 @@
 						<a href="#"><u>See All</u></a>
 					</div>
 			</div>
-			<div class="card introduction" style="display: block;">
+			<div class="card introduction">
 				<div>
 					<h2 align="center"> INTRODUCTION </h2>
 				</div>	
 				<div class="intro-content">	
 					<p>
-						As the world is getting advanced with new innovations & technological inventions, we are still wasting so much of investment and 	effort on paper.
+						As the world is getting advanced with new innovations and technological inventions, we are still wasting so much of investment and 	effort on paper.
 						This project is a small initiation to make the world more digitized.
-						Why waste so much of wealth & wait for almost a year for things that can be done right now?
-						This Digital Paper facilitates its user to read & add contents immediately.
-						You can immediately browse the contents, upload your articles, whenever & wherever you are.
+						Why waste so much of wealth and wait for almost a year for things that can be done right now?
+						This Digital Paper facilitates its user to read and add contents immediately.
+						You can immediately browse the contents, upload your articles, whenever and wherever you are.
 					</p>
 					<p>
 						This Digital Paper is prepared as the project work of Web Tech-I by <u>Anish Ghimire</u>, <u>Dipak Raj Badu</u> and <u>Saroj Kafle</u>. We remain grateful
-						to our lecturer <u>Mr. Indra PC</u> for providing us this golden opportunity and for all the support and guidance throughout the 	completion of the project. <a href="developers.html" style="color: blue;">View More</a>	
+						to our lecturer <u>Mr. Indra PC</u> for providing us this golden opportunity and for all the support and guidance throughout the 	completion of the project. <a href="developers.html" style="color: blue">View More</a>	
 					</p>
 				</div>
 			</div>
@@ -178,7 +163,7 @@
 									<h4>Binay Mohan Saud</h4>
 										Implementation of the plan was not that easy.
 										Moreover, it was all about an innovation and...
-									<span class="tooltip">By: Sweta, Anjena & Govinda  </span>	
+									<span class="tooltip">By: Sweta, Anjena and Govinda  </span>	
 								</a>
 							</div>
 							<div class="card thumbnail">
@@ -186,7 +171,7 @@
 									<h4>Sadikshya Shrestha</h4>
 										Sadikshya Shrestha, Miss Nepal 2010 is
 										the youngest Miss Nepal winner, and can be taken...
-									<span class="tooltip">By: Prajwol, Garima & Dipenti</span>
+									<span class="tooltip">By: Prajwol, Garima and Dipenti</span>
 								</a>
 							</div>
 						</div>
@@ -194,8 +179,8 @@
 							<a href="#"><u>See All</u></a>
 						</div>
 						
-			</div>			
+			</div>
 		</div>
-	<script src="./javascript/scripts.js"></script>	
+		
 	</body>
 </html>
